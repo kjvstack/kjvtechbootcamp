@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | KJV Tech Bootcamp 2.0</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="admin-login-section">
+
+        <div class="admin-login-card">
+
+            <a href="index.html" class="admin-logo">
+                <img
+                    src="assets/images/kjv-tech-logo.png"
+                    alt="KJV Tech"
+                >
+            </a>
+
+            <div class="admin-login-heading">
+                <span class="admin-badge">ADMINISTRATOR PORTAL</span>
+
+                <h1>Welcome Back</h1>
+
+                <p>
+                    Sign in to manage KJV Tech Bootcamp 2.0 registrations.
+                </p>
+            </div>
+
+            <form id="adminLoginForm">
+
+                <div class="form-group">
+                    <label for="adminEmail">Administrator Email</label>
+
+                    <input
+                        type="email"
+                        id="adminEmail"
+                        placeholder="Enter your email"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="adminPassword">Password</label>
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <div id="adminMessage" class="admin-message"></div>
+
+                <button
+                    type="submit"
+                    id="adminLoginButton"
+                    class="btn btn-primary admin-login-button"
+                >
+                    Sign In to Dashboard →
+                </button>
+
+            </form>
+
+            <a href="index.html" class="admin-back-link">
+                ← Back to Homepage
+            </a>
+
+            <p class="admin-security-note">
+                Restricted access. Authorized administrators only.
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

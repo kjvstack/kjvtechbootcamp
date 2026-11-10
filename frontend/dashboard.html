@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | KJV Tech Bootcamp 2.0</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+        <div class="container dashboard-nav">
+
+            <a href="index.html" class="logo">
+                <img
+                    src="assets/images/kjv-tech-logo.png"
+                    alt="KJV Tech"
+                    class="logo-image"
+                >
+            </a>
+
+            <div class="dashboard-nav-actions">
+                <span class="admin-status">
+                    <span class="status-dot"></span>
+                    Administrator
+                </span>
+
+                <button id="logoutButton" class="btn btn-secondary">
+                    Logout
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+
+        <div class="container">
+
+            <section class="dashboard-welcome">
+                <div>
+                    <span class="dashboard-label">
+                        KJV TECH BOOTCAMP 2.0
+                    </span>
+
+                    <h1>Admin Dashboard</h1>
+
+                    <p>
+                        Manage participant registrations and programme records.
+                    </p>
+                </div>
+
+                <button id="refreshButton" class="btn btn-primary">
+                    ↻ Refresh Data
+                </button>
+            </section>
+
+            <!-- Statistics -->
+            <section class="dashboard-stats">
+
+                <div class="stat-card">
+                    <span>Total Registrations</span>
+                    <h2 id="totalParticipants">0</h2>
+                </div>
+
+                <div class="stat-card">
+                    <span>Bootcamp Capacity</span>
+                    <h2>40</h2>
+                </div>
+
+                <div class="stat-card">
+                    <span>Available Spaces</span>
+                    <h2 id="availableSpaces">40</h2>
+                </div>
+
+            </section>
+
+            <!-- Participants -->
+            <section class="participants-section">
+
+                <div class="participants-heading">
+
+                    <div>
+                        <h2>Registered Participants</h2>
+
+                        <p>
+                            View and manage participant records.
+                        </p>
+                    </div>
+
+                    <button id="exportButton" class="btn btn-primary">
+                        ↓ Export CSV
+                    </button>
+
+                </div>
+
+                <div class="participants-toolbar">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search by name or registration number..."
+                    >
+
+                </div>
+
+                <div id="dashboardMessage" class="dashboard-message">
+                    Loading participant records...
+                </div>
+
+                <div class="table-container">
+
+                    <table class="participants-table">
+
+                        <thead>
+                            <tr>
+                                <th>S/N</th>
+                                <th>Registration Number</th>
+                                <th>Participant Name</th>
+                                <th>School</th>
+                                <th>Guardian Name</th>
+                                <th>Guardian Phone</th>
+                                <th>Guardian Email</th>
+                                <th>Registration Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="participantsTableBody">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

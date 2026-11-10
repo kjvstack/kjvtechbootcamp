@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Confirmation | KJV Tech Bootcamp 2.0</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img
+                    src="assets/images/kjv-tech-logo.png"
+                    alt="KJV Tech"
+                    class="logo-image"
+                >
+            </a>
+        </div>
+    </header>
+
+    <main class="success-section">
+        <div class="container">
+
+            <div class="success-heading">
+                <div class="success-icon">✓</div>
+
+                <h1>Registration Successful!</h1>
+
+                <p>
+                    Congratulations! The participant's registration
+                    for KJV Tech Bootcamp 2.0 has been recorded.
+                </p>
+            </div>
+
+            <div class="participant-card" id="participantCard">
+
+                <div class="card-header">
+                    <img
+                        src="assets/images/kjv-tech-logo.png"
+                        alt="KJV Tech"
+                        class="card-logo"
+                    >
+
+                    <span class="card-label">
+                        PARTICIPANT CONFIRMATION CARD
+                    </span>
+                </div>
+
+                <div class="card-body">
+
+                    <h2>KJV TECH BOOTCAMP 2.0</h2>
+
+                    <p class="card-subtitle">
+                        Inspiring the Next Generation of Innovators
+                    </p>
+
+                    <div class="card-divider"></div>
+
+                    <div class="participant-details">
+
+                        <div class="detail-item">
+                            <span>Participant Name</span>
+                            <strong id="participantName">Loading...</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>School</span>
+                            <strong id="participantSchool">Loading...</strong>
+                        </div>
+
+                        <div class="detail-item registration-code">
+                            <span>Registration Number</span>
+                            <strong id="participantCode">Loading...</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="card-event-details">
+                        <div>
+                            <span>Programme Dates</span>
+                            <strong>7 – 31 December 2026</strong>
+                        </div>
+
+                        <div>
+                            <span>Venue</span>
+                            <strong>Destiny Dominion Camlab International School Ground, Angwan Tomatoes</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <span>KJV TECH</span>
+                    <span>CREATE • INNOVATE • INSPIRE</span>
+                </div>
+
+            </div>
+
+            <div class="card-actions">
+                <button class="btn btn-primary" onclick="window.print()">
+                    Print / Save as PDF
+                </button>
+
+                <a href="index.html" class="btn btn-secondary">
+                    Back to Homepage
+                </a>
+            </div>
+
+            <p class="success-note">
+                Keep this confirmation card for reference.
+            </p>
+
+        </div>
+    </main>
+
+    <script src="js/success.js"></script>
+
+</body>
+</html>

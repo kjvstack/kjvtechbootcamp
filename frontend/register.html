@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for KJV Tech Bootcamp 2.0.">
+    <title>Register | KJV Tech Bootcamp 2.0</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="registration-page">
+
+    <header class="header">
+        <div class="container navbar">
+          <a href="index.html" class="logo">
+    <img
+        src="assets/images/kjv-tech-logo.png"
+        alt="KJV Tech Logo"
+        class="logo-image"
+    >
+</a>
+
+            <a href="index.html" class="text-link">
+                ← Back to Home
+            </a>
+        </div>
+    </header>
+
+    <main class="registration-container">
+
+        <div class="registration-intro">
+            <span class="section-label">BOOTCAMP 2.0</span>
+
+            <h1>Start Your <span>Tech Journey.</span></h1>
+
+            <p>
+                Complete the registration form below with the help
+                of your parent or guardian.
+            </p>
+        </div>
+
+        <div class="registration-card">
+
+            <div class="form-heading">
+                <h2>Participant Registration</h2>
+                <p>Enter the participant and guardian information.</p>
+            </div>
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="participantName">
+                        Participant's Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="participantName"
+                        name="participantName"
+                        placeholder="Enter participant's full name"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="school">School</label>
+
+                    <input
+                        type="text"
+                        id="school"
+                        name="school"
+                        placeholder="Enter school name"
+                        maxlength="150"
+                        required
+                    >
+                </div>
+
+                <div class="form-divider"></div>
+
+                <div class="guardian-heading">
+                    <h3>Parent / Guardian Information</h3>
+
+                    <p>
+                        A parent or guardian must provide their
+                        information and consent.
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianName">
+                        Parent / Guardian Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guardianName"
+                        name="guardianName"
+                        placeholder="Enter guardian's full name"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianPhone">
+                        Parent / Guardian Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="guardianPhone"
+                        name="guardianPhone"
+                        placeholder="e.g. 08012345678"
+                        maxlength="20"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="guardianEmail">
+                        Parent / Guardian Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="guardianEmail"
+                        name="guardianEmail"
+                        placeholder="example@email.com"
+                        maxlength="150"
+                        required
+                    >
+                </div>
+
+                <div class="consent-box">
+                    <label class="consent-label">
+                        <input
+                            type="checkbox"
+                            id="guardianConsent"
+                            name="guardianConsent"
+                            required
+                        >
+
+                        <span>
+                            I confirm that I am the participant's
+                            parent or legal guardian. I consent to
+                            this registration and agree that the
+                            information provided may be used to
+                            administer the bootcamp.
+                        </span>
+                    </label>
+                </div>
+
+                <p id="formMessage" class="form-message"></p>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary submit-button"
+                    id="submitButton"
+                >
+                    Continue Registration →
+                </button>
+
+                <p class="form-security">
+                    Your information will be handled responsibly
+                    and used for bootcamp registration.
+                </p>
+
+            </form>
+        </div>
+
+        <div class="registration-footer">
+            <p>
+                KJV Tech | Inspiring the Next Generation of Innovators.
+            </p>
+        </div>
+
+    </main>
+
+    <script src="js/register.js"></script>
+
+</body>
+</html>
