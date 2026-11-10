@@ -3,7 +3,7 @@ const adminLoginForm = document.getElementById("adminLoginForm");
 const adminMessage = document.getElementById("adminMessage");
 const adminLoginButton = document.getElementById("adminLoginButton");
 
-const API_URL = "http://localhost:5000/api/admin";
+const API_URL = "https://kjv-bootcamp-api.onrender.com/api/admin";
 
 adminLoginForm.addEventListener("submit", async (event) => {
     event.preventDefault();

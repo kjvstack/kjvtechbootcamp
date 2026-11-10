@@ -3,7 +3,7 @@ const formMessage = document.getElementById("formMessage");
 const submitButton = document.getElementById("submitButton");
 
 // Backend API address
-const API_URL = "http://localhost:5000/api/registration";
+const API_URL = "https://kjv-bootcamp-api.onrender.com/api/registration";
 
 registrationForm.addEventListener("submit", async (event) => {
     event.preventDefault();

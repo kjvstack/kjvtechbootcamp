@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/admin";
+const API_URL = "https://kjv-bootcamp-api.onrender.com/api/admin";
 const MAX_CAPACITY = 40;
 
 const token = sessionStorage.getItem("kjvAdminToken");
